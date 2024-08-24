@@ -1,0 +1,732 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+
+}
+body{
+  background-color: rgb(230, 230, 230);
+}
+
+.header_top {
+  background-color: #3275db;
+  height: 50px;
+  padding-top: 5px;
+  padding-bottom: 15px;
+
+  cursor: pointer;
+}
+
+.container {
+  padding-top: 5px;
+  width: 80%;
+  /* Adjust width as needed */
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  font-size: 13px;
+  align-items: center;
+}
+
+nav {
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #c2c2c2;
+  /* Change background color as needed */
+  padding: 20px 0;
+  /* Add padding for spacing */
+}
+
+.logo img {
+  width: 150px;
+  /* Adjust logo size as needed */
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin: 0 20px;
+  /* Adjust spacing between items */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  /* Change link color as needed */
+  font-weight: bold;
+  color: #fff;
+}
+
+
+/* Target all Font Awesome icons */
+i {
+  font-size: 12px;
+  /* Adjust size as needed */
+  margin-right: 5px;
+  /* Add space between icons */
+  color: #fff;
+  /* Change icon color as needed */
+  padding: 1px;
+}
+
+.specialIcon{
+  font-size: 18px;
+  padding-right: 8px;
+}
+
+.heroSection {
+  margin: 180px auto;
+  width: 80%;
+  max-width: fit-content;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.heroSection h2 {
+  color: #fff;
+  font-size: 45px;
+  font-weight: 900;
+  margin: 0;
+  position: relative;
+}
+
+.heroSection h1 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.heroSection p {
+  margin-top: 20px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.pHeart {
+  font-size: 20px;
+}
+
+form {
+  width: fit-content;
+  margin: 20px auto;
+}
+
+.input-container {
+  position: relative;
+  width: 300px;
+}
+
+.input-container input {
+  width: 100%;
+  padding: 10px 40px 10px 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.input-container i {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #aaa;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.heroImg {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heroImg img {
+  width: 80%;
+  max-width: 300px;
+  height: auto;
+  display: block;
+}
+
+@keyframes typingIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes typingOut {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+}
+
+.typing-char {
+  display: inline-block;
+  opacity: 0;
+  animation: typingIn 0.3s ease forwards;
+  animation-delay: var(--delay);
+}
+
+.typing-out {
+  animation: typingOut 0.5s ease forwards;
+}
+
+
+
+
+
+
+.works {
+  text-align: center; /* Center the heading */
+  font-weight: 800; /* Make the text bold */
+  font-size: 35px; /* Adjust the font size to make it more prominent */
+  margin-bottom: 32px; /* Add some space below the heading */
+  margin-top: -50px;
+}
+
+.course-grid {
+  display: flex; /* Use flexbox to align the cards in a row */
+  justify-content: center; /* Center the grid within the container */
+  align-items: center; /* Center the grid vertically (if needed) */
+  gap: 20px; /* Add space between the cards */
+  margin: 30px auto; /* Center the grid section on the page */
+  max-width: 1050px; /* Ensure the grid has enough space for six cards */
+  flex-wrap: wrap; /* Allow wrapping if necessary on smaller screens */
+}
+
+.course-card {
+  background-color: #fff;
+  width: calc(16.666% - 20px); /* Each card takes up 1/6 of the row minus the gap */
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow for a subtle effect */
+  border-radius: 12px; /* Optional: Add rounded corners */
+  transition: transform 0.3s ease; /* Add transition for hover effect */
+  box-sizing: border-box; /* Ensure padding and border are included in the width */
+}
+
+.course-card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px; /* Add space between the image and text */
+}
+
+.course-card p {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.course-card:hover {
+  transform: translateY(-10px); /* Lift the card slightly on hover */
+}
+
+
+/* Center and style the title section */
+.limitedTitle {
+  text-align: center;
+  padding: 20px;
+  margin-top: 110px;
+  margin-bottom: 20px;
+}
+
+.limitedTitle h1 {
+  font-size: 28px; /* Adjust as needed */
+  font-weight: bold; /* Make the heading bold */
+  margin: 0; /* Remove default margin */
+}
+
+.limitedTitle p {
+  font-size: 16px; /* Adjust font size as needed */
+  color: #666; /* Change text color if needed */
+  margin-top: 10px; /* Space above the paragraph */
+}
+
+/* Style for the course bundles section */
+.course-bundles {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 10px;
+  gap: 25px;
+}
+
+.course-bundle {
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: left;
+  width: 480px; /* Adjust width if needed */
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+}
+
+/* Style for the title section inside each bundle */
+.limitedCourseTitle {
+  background-color: #385bce;
+ 
+  padding: 20px 15px;
+  margin: -20px -20px 20px;
+}
+
+.limitedCourseTitle h2 {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 5px; /* Adjust as needed */
+}
+
+.limitedCourseTitle p {
+  color: #ff2424;
+  font-size: 16px;
+  margin: 0;
+}
+
+/* Style for the list inside each bundle */
+.course-bundle ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.course-bundle li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+.course-bundle img {
+  width: 150px; /* Adjust size as needed */
+  height: 50px; /* Adjust size as needed */
+  margin-right: 10px; /* Space between image and text */
+  object-fit: cover; /* Ensure images cover their container */
+}
+
+.course-bundle span {
+  display: block;
+}
+
+.course-bundle p {
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 10px;
+  color: #fff;
+}
+
+div .price{
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 10px;
+  color: black;
+}
+
+.course-bundle:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+
+
+
+
+/* Style for the intern-cards section */
+
+.internTitle {
+  text-align: center; /* Center the text horizontally */
+  padding: 20px; /* Add padding around the heading */
+  margin-top: 35px;
+}
+
+.internTitle h2 {
+  font-size: 36px; /* Adjust font size as needed */
+  font-weight: 900; /* Bold font weight */
+  margin: 0; /* Remove default margin */
+  color: #333; /* Set text color */
+}
+
+
+.intern-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between cards */
+  justify-content: center;
+  background-color: #f4f4f4; /* Background color for the section */
+  padding: 20px;
+}
+
+/* Style for each intern card */
+.intern-card {
+  background-color: #fff; /* Background color for each card */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  width: 280px; /* Adjust width as needed */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align content */
+}
+
+/* Style for the image inside each card */
+.intern-icon {
+  width: 60px; /* Adjust size as needed */
+  height: 60px; /* Adjust size as needed */
+  margin-bottom: 15px; /* Space below the image */
+}
+
+/* Style for headings and paragraphs */
+.intern-card h2 {
+  font-size: 20px; /* Adjust font size as needed */
+  margin: 0;
+  color: #333; /* Dark color for text */
+}
+
+.intern-card p {
+  font-size: 16px; /* Adjust font size as needed */
+  color: #666; /* Lighter color for text */
+  margin: 5px 0 15px; /* Margin around the paragraph */
+}
+
+/* Style for the list inside each card */
+.intern-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.intern-card li {
+  font-size: 14px; /* Adjust font size as needed */
+  color: #333; /* Dark color for text */
+  margin-bottom: 5px; /* Space between list items */
+}
+
+/* Style for the button */
+.intern-card button {
+  background-color: #385bce; /* Blue background for the button */
+  color: #fff; /* White text color */
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px; /* Adjust font size as needed */
+  transition: background-color 0.3s ease;
+}
+
+.intern-card button:hover {
+  background-color: #3048d8; /* Darker blue on hover */
+}
+
+.loadMore-Btn {
+  width: 95%; /* Set the width of the container */
+  display: flex; /* Enable flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically, if needed */
+  padding: 20px; /* Optional: adjust padding as needed */
+}
+
+.loadMore-Btn button {
+  background-color: #385bce; /* Blue background for the button */
+  color: #fff; /* White text color */
+  border: none;
+  border-radius: 4px; /* Rounded corners */
+  padding: 10px 20px; /* Internal padding */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 16px; /* Font size */
+  transition: background-color 0.3s ease; /* Smooth color transition */
+}
+
+.loadMore-Btn button:hover {
+  background-color: #3347a8; /* Darker blue on hover */
+}
+
+
+
+
+.itsTime {
+  margin-top: 25px;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  gap: 20px; /* Space between text and image */
+  padding: 20px; /* Add padding around the section */
+  background-color: #3347a8; /* Light background color for the section */
+}
+
+.itsTime-text {
+  width: 100%;
+  color: #fff; /* White text color for the whole text */
+  font-size: 34px; /* Font size for the text */
+  font-weight: 900; /* Regular font weight */
+  text-align: center; /* Center text alignment */
+  margin-bottom: 35px;
+
+}
+
+.itsTime-text span {
+  color: #385bce; /* Blue color for the span text */
+  font-weight: 900; /* Bold font weight for emphasis */
+}
+
+.itsTime-img img {
+  max-width: 100%; /* Ensure the image is responsive and fits within its container */
+  height: auto; /* Maintain aspect ratio of the image */
+  border-radius: 8px; /* Optional: add rounded corners to the image */
+}
+
+
+
+
+
+/* General Footer Styles */
+#footer {
+  background-color: #3347a8;
+  color: white;
+  padding: 20px 0;
+}
+
+.footer_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer_container {
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Center align items horizontally */
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer_widgets_wrapper {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.footer_widgets {
+  display: flex;
+  justify-content: center; /* Center align widgets */
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.widget {
+  padding: 20px;
+  max-width: 25%;
+}
+
+.widget_title h3 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.textwidget,
+.course_list,
+.page_list,
+.contact_list {
+  font-size: 14px;
+}
+
+
+
+.course_list li,
+.page_list li,
+.contact_list li {
+  margin-bottom: 10px;
+  list-style: none;
+}
+
+
+li.contact_item {
+  display: flex;
+}
+
+.course_list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Add gap between items */
+}
+
+.course_list li {
+  flex: 1 1 calc(50% - 20px); /* Adjust for two items per row with gap */
+  display: flex;
+  align-items: center;
+}
+
+.course_list img {
+  margin-right: 10px;
+}
+
+#footer_copyright {
+  width: 100%;
+
+  padding: 10px 0;
+  text-align: center; /* Center align the content */
+  margin-top: 20px;
+}
+
+.footer_container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px; /* Add padding to ensure content doesn’t touch the edges */
+}
+
+.footer_row {
+  display: flex;
+ 
+  align-items: center; /* Center items horizontally */
+}
+
+.copyright_text {
+  font-size: 14px;
+  margin-bottom: 25px; /* Space between text and icons */
+}
+
+.social_links {
+  display: flex;
+  justify-content: right;
+  width: 350%;
+}
+
+.social_links ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social_links ul li {
+  margin-left: 10px;font-size: 2S8px;
+}
+
+.social_links ul li a {
+  color: white;
+  
+}
+
+.social_links ul li a:hover {
+  color: #ffcc00; /* Change color on hover without underline */
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #3275db; /* Change color on hover without underline */
+}
+
+.fontSize{
+  font-size: 19px;
+}
+
+.mobileApp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 50px;
+  width: 100%;
+  
+  background-color: #f5f5f5; /* Light background to make content stand out */
+  
+}
+
+.mobileApp-img {
+  position: relative;
+  height: 90%;
+  width: 45%; /* Adjusted width for better spacing */
+}
+
+.mobileApp-img img {
+  width: 70%;
+  margin-left: 118px;
+}
+
+.mobileApp-txt {
+  position: relative;
+  width: 50%;
+    margin-top: -230px;
+  font-family: 'Montserrat';
+
+}
+
+.mobileApp-txt h1 {
+  font-size: 33px;
+  font-weight: 800;
+}
+
+.mobileApp-txt h1 span{
+  color: #3048d8;
+}
+
+.appTxt {
+  font-size: 20px;
+  line-height: 1.6; /* Improved line height for readability */
+  word-spacing: 2px; /* Added word spacing for better text distribution */
+  color: #333; /* Darker text for better contrast */
+  width: 78%;
+}
+
+.appSm-img {
+  margin-top: 20px; /* Space between text and store icons */
+}
+
+.appSm-img img {
+  margin-right: 10px; /* Spacing between store icons */
+  width: 180px; /* Standardized size for store icons */
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .mobileApp {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .mobileApp-img, .mobileApp-txt {
+      width: 100%;
+  }
+
+  .mobileApp-img img {
+      width: 80%; /* Responsive adjustment for image */
+      margin: 0 auto;
+  }
+
+  .appSm-img {
+      justify-content: center;
+  }
+
+  .appSm-img img {
+      width: 120px; /* Slightly smaller icons on mobile */
+  }
+}
